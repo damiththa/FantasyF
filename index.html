@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us" ng-app="appFantasyF">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MDMS -Simple Fantasy Football</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+      <br>
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="#/home">Home</a></li>
+            <li role="presentation"><a href="#/rounds">Rounds</a></li>
+            <li role="presentation"><a href="#/courses">Courses</a></li>
+            <li role="presentation"><a href="#/about">About</a></li>
+          </ul>
+          <h3 class="text-muted">MDMS - Simple Fantasy Football</h3>
+        </nav>
+        
+      </div>      
+      <!--<div ng-view></div>      -->
+    </div>
+    
+<!--scripts-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="Controllers/MainController.js"></script>
+<script src="Services/SecretsService.js"></script>
+</body>
+</html>
