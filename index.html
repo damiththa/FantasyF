@@ -5,31 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MDMS -Simple Fantasy Football</title>
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/picnic/6.1.5/picnic.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="Styles/mainStyleSheet.css">
 </head>
 <body>
-    <div class="container">
+    <div class="pure-container">      
       <br>
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="#/home">Home</a></li>
-            <li role="presentation"><a href="#/rounds">Rounds</a></li>
-            <li role="presentation"><a href="#/courses">Courses</a></li>
-            <li role="presentation"><a href="#/about">About</a></li>
+      <div class="pure-menu pure-menu-horizontal">
+          <h3 href="#" class="pure-menu-heading">MDMS - Simple Fantasy Football</h3>
+          <ul class="pure-menu-list">
+              <li class="pure-menu-item"><a href="#/players" class="pure-menu-link">Players</a></li>
+              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Rounds</a></li>
+              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Courses</a></li>              
           </ul>
-          <h3 class="text-muted">MDMS - Simple Fantasy Football</h3>
-        </nav>
-        
-      </div>      
-      <!--<div ng-view></div>      -->
+      </div> 
+      <div ng-view></div>
     </div>
     
 <!--scripts-->
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
 <script src="app.js"></script>
-<script src="Controllers/MainController.js"></script>
+<script src="Controllers/PlayersController.js"></script>
 <script src="Services/SecretsService.js"></script>
 </body>
 </html>

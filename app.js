@@ -5,8 +5,8 @@
     appFantasyF.config(['$routeProvider', function($routeProvider){
 		$routeProvider
             .when('/', {
-                controller: 'MainController',
-                templateUrl: 'Views/home.html'
+                controller: 'PlayersController',
+                templateUrl: 'Views/players.html'
             })
             .when('/rounds', {
                 templateUrl: 'Views/rounds.html'
