@@ -1,13 +1,13 @@
 
 <div class="tabs four">
-  <input id='tab-1' type='radio' name='playersTab' checked />
-  <label class="pseudo button toggle" for="tab-1">QB</label>
-  <input id='tab-2' type='radio' name='playersTab'>
-  <label class="pseudo button toggle" for="tab-2">RB</label>
-  <input id='tab-3' type='radio' name='playersTab'>
-  <label class="pseudo button toggle" for="tab-3">WR</label>
-  <input id='tab-4' type='radio' name='playersTab'>
-  <label class="pseudo button toggle" for="tab-4">TE</label>
+  <input id='tab-QB' type='radio' name='playersTab' ng-click="getPlayers('QB')" checked />
+  <label class="pseudo button toggle" for="tab-QB">QB</label>
+  <input id='tab-RB' type='radio' name='playersTab' ng-click="getPlayers('RB')">
+  <label class="pseudo button toggle" for="tab-RB">RB</label>
+  <input id='tab-WR' type='radio' name='playersTab'>
+  <label class="pseudo button toggle" for="tab-WR">WR</label>
+  <input id='tab-TE' type='radio' name='playersTab'>
+  <label class="pseudo button toggle" for="tab-TE">TE</label>
   <div class="row">
     <!--QBs-->
     <div>
