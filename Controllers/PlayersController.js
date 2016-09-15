@@ -17,7 +17,7 @@
         });                  
     };
     
-    PlayersController.$inject = ['$scope', 'SecretsService'];
+    PlayersController.$inject = ['$scope', 'SecretsService','NFLService'];
     
     angular.module('appFantasyF')
         .controller('PlayersController', PlayersController);    
