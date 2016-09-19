@@ -12,7 +12,8 @@
                         },
                         params: {
                             position : thisPosition,
-                            count : 25
+                            count : 25,
+                            editorId : 1 // Editor - Michael Fabiano
                         }
                     }).then(function(response) {
                         return response.data;
