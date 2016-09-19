@@ -14,10 +14,10 @@
                     console.log($scope.ThisPosition);
                 })         
             };
-
-            //inti
+            
+            //init
             function init(){
-                $scope.getPlayers('QB');    
+                $scope.getPlayers('QB'); //default position to get    
             };
             init();
         });                  
