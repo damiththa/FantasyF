@@ -8,41 +8,99 @@
   <label class="pseudo button toggle" for="tab-WR">WR</label>
   <input id='tab-TE' type='radio' name='playersTab' ng-click="getPlayers('TE')">
   <label class="pseudo button toggle" for="tab-TE">TE</label>
+
   <div class="row">
     <!--QBs-->
     <div>
       <table class="pure-table pure-table-horizontal">
         <thead>
           <tr>
-            <th>&nbsp;</th>
+            <th>Rank</th>
             <th>Player</th>
-            <th>Team</th>
             <th>Opponent</th>
           </tr>
         </thead>
-        <!--
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Honda</td>
-            <td>Accord</td>
-            <td>2009</td>
+        <tbody>         
+          <tr ng-repeat="player in ThisPosition.players">
+            <td>{{player.rank}}</td>
+            <td>
+              {{player.firstName}} {{player.lastName}}
+              <br>
+              {{player.teamAbbr}}
+            </td>            
+            <td>{{player.opponentTeamAbbr}}</td>
           </tr>
         </tbody>
-        -->
       </table>
     </div>
-    <!--RBs-->
+    <!--RB-->
     <div>
-      RB
+      <table class="pure-table pure-table-horizontal">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Opponent</th>
+          </tr>
+        </thead>
+        <tbody>         
+          <tr ng-repeat="player in ThisPosition.players">
+            <td>{{player.rank}}</td>
+            <td>
+              {{player.firstName}} {{player.lastName}}
+              <br>
+              {{player.teamAbbr}}
+            </td>            
+            <td>{{player.opponentTeamAbbr}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!--WRs-->
     <div>
-      WR
+      <table class="pure-table pure-table-horizontal">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Opponent</th>
+          </tr>
+        </thead>
+        <tbody>         
+          <tr ng-repeat="player in ThisPosition.players">
+            <td>{{player.rank}}</td>
+            <td>
+              {{player.firstName}} {{player.lastName}}
+              <br>
+              {{player.teamAbbr}}
+            </td>            
+            <td>{{player.opponentTeamAbbr}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <!--TEs-->
     <div>   
-      TE
+      <table class="pure-table pure-table-horizontal">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Opponent</th>
+          </tr>
+        </thead>
+        <tbody>         
+          <tr ng-repeat="player in ThisPosition.players">
+            <td>{{player.rank}}</td>
+            <td>
+              {{player.firstName}} {{player.lastName}}
+              <br>
+              {{player.teamAbbr}}
+            </td>            
+            <td>{{player.opponentTeamAbbr}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
